@@ -1,0 +1,430 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/l0wx1k/okk/main/Ajh')))()
+
+---Windows
+local Window = OrionLib:MakeWindow({Name = "30xMkzZ Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+---Notify
+OrionLib:MakeNotification({
+	Name = "30xMkzZ Hub",
+	Content = "30xMkzZ Hub Launched",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+---Tab
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "Commands Category"
+})
+
+---Button
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button2
+Tab:AddButton({
+	Name = "CMD X",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button3
+Tab:AddButton({
+	Name = "Fates Admin",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+      		print("Button Pressed")
+  	end    
+})
+
+---Button4
+Tab:AddButton({
+	Name = "Reviz Admin",
+	Callback = function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/pyzjWNhk'),true))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "Hub Category"
+})
+
+---Button
+Tab:AddButton({
+	Name = "Ice Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button2
+Tab:AddButton({
+	Name = "Hoho Hub",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button3
+Tab:AddButton({
+	Name = "Eclipse Hub",
+	Callback = function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script'),true))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button4
+Tab:AddButton({
+	Name = "Owl Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+      		print("Button Pressed")
+  	end    
+})
+
+---Button4
+Tab:AddButton({
+	Name = "Dreadz Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/DreadzHub2/DreadzHub-Scripts-FR/main/Loader"))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button5
+Tab:AddButton({
+	Name = "Darkai Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "FE Category"
+})
+
+---Button
+Tab:AddButton({
+	Name = "Headless (FE)",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Fly-GUI/main/Fly'))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button2
+Tab:AddButton({
+	Name = "Shiftlock (FE)",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Shiftlock-/main/Shiftlock'))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button3
+Tab:AddButton({
+	Name = "Fly (FE)",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/fly/main/Fly'))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button4
+Tab:AddButton({
+	Name = "Invisible (FE)",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Fly-GUI/main/Fly'))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "Utility Category"
+})
+
+---Button
+Tab:AddButton({
+	Name = "Keyboard",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button2
+Tab:AddButton({
+	Name = "Fps Boost",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/fps-boost/main/Fps%20booster'))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Tab
+local Tab = Window:MakeTab({
+	Name = "Games",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "Murder Mystery 2"
+})
+
+---Button
+Tab:AddButton({
+	Name = "MM2 Admin Panels",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel"))();
+      		print("Button Pressed")
+  	end    
+})
+
+---Button2
+Tab:AddButton({
+	Name = "Vynixu's MM2",
+	Callback = function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/MTYiYkZQ'),true))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button3
+Tab:AddButton({
+	Name = "Dreadz Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/DreadzHub2/DreadzHub-Scripts-FR/main/Loader"))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button3
+Tab:AddButton({
+	Name = "No Name",
+	Callback = function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/mg7cecRF"))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button3
+Tab:AddButton({
+	Name = "Coin Farmer",
+	Callback = function()
+	local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton1 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(87, 3, 255)
+Frame.Position = UDim2.new(0.100320168, 0, 0.379746825, 0)
+Frame.Size = UDim2.new(0, 190, 0, 57)
+Frame.Active = true
+Frame.Selectable = true
+Frame.Draggable = true
+
+TextButton1.Text = "Farm"
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton1.Size = UDim2.new(0, 45, 0, 28)
+TextButton1.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton1.TextSize = 14.000
+
+TextButton3.Text = "God"
+TextButton3.Parent = Frame
+TextButton3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton3.Size = UDim2.new(0, 45, 0, 28)
+TextButton3.Position = UDim2.new(0, 0, 0.491228074, 0)
+TextButton3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton3.TextSize = 14.000
+
+Exit.Text = "X"
+Exit.Parent = Frame
+Exit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit.Position = UDim2.new(1,-30,0,10)
+Exit.Size = UDim2.new(0, 45, 0, 28)
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextSize = 14.000
+
+local function button1()
+	local script = Instance.new('LocalScript', TextButton1)
+	script.Parent.MouseButton1Click:Connect(function()
+ game:GetService("StarterGui"):SetCore("SendNotification", {Title = "MM2", Text = "Created by 30xMkzZ"})
+local antiafk = false local AntiAFKKickGUI = Instance.new("ScreenGui") local MainFrame = Instance.new("Frame") local Button = Instance.new("TextButton") local Deco = Instance.new("TextLabel") AntiAFKKickGUI.Name = "AntiAFKKickGUI" AntiAFKKickGUI.Parent = game.CoreGui MainFrame.Name = "MainFrame" MainFrame.Parent = AntiAFKKickGUI MainFrame.Active = true MainFrame.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078) MainFrame.BorderSizePixel = 0 MainFrame.Draggable = true MainFrame.Position = UDim2.new(0.25, 0, 0.25, 0) MainFrame.Size = UDim2.new(0.150000006, 0, 0.100000001, 0) Button.Name = "Button" Button.Parent = MainFrame Button.BackgroundColor3 = Color3.new(0, 0, 0) Button.BorderSizePixel = 0 Button.Position = UDim2.new(0.25, 0, 0.400000006, 0) Button.Size = UDim2.new(0.5, 0, 0.400000006, 0) Button.Font = Enum.Font.SourceSans Button.FontSize = Enum.FontSize.Size14 Button.Text = "OFF" Button.TextColor3 = Color3.new(1, 0, 0) Button.TextScaled = true Button.TextSize = 14 Button.TextWrapped = true Deco.Name = "Deco" Deco.Parent = MainFrame Deco.BackgroundColor3 = Color3.new(1, 1, 1) Deco.BackgroundTransparency = 0.89999997615814 Deco.BorderSizePixel = 0 Deco.Size = UDim2.new(1, 0, 0.300000012, 0) Deco.Font = Enum.Font.SourceSansBold Deco.FontSize = Enum.FontSize.Size14 Deco.Text = "AFK" Deco.TextColor3 = Color3.new(1, 1, 1) Deco.TextScaled = true Deco.TextSize = 14 Deco.TextWrapped = true Button.MouseButton1Down:connect(function() if antiafk == false then antiafk = true Button.TextColor3 = Color3.new(0, 1, 0) Button.Text = "ON" else antiafk = false Button.TextColor3 = Color3.new(1, 0, 0) Button.Text = "OFF" end end) spawn(function() while true do wait() if antiafk == true then wait(math.random(0.3,1)) local a = math.random(1,5) if a == 1 then keypress(0x57) keyup(0x57) end if a == 2 then keypress(0x53) end if a == 3 then keypress(0x44) end if a == 4 then keypress(0x41) end if a == 5 then keypress(0x20) end end end end) power = 5 game:GetService('RunService').Stepped:connect(function() game.Players.LocalPlayer.Character.Head.CanCollide = false game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false end) wait(.1) local bambam = Instance.new("BodyThrust") bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart bambam.Force = Vector3.new(power,0,power) bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position while true do wait() local children = game.Workspace:GetChildren() for _, child in pairs(children) do for _, child in pairs(child:GetChildren()) do table.insert(children, child) end if child:IsA("BasePart") and child.Name == "Coin_Server" then game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = child.CFrame wait(2.5) end end end
+	end)
+end
+coroutine.wrap(button1)()
+
+local function button3()
+	local script = Instance.new('LocalScript', TextButton3)
+	script.Parent.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+if player.Character then
+if player.Character:FindFirstChild("Humanoid") then
+player.Character.Humanoid.Name = "1"
+end
+local l = player.Character["1"]:Clone()
+l.Parent = player.Character
+l.Name = "Humanoid"; wait(0.1)
+player.Character["1"]:Destroy()
+workspace.CurrentCamera.CameraSubject = player.Character.Humanoid
+player.Character.Animate.Disabled = true; wait(0.1)
+player.Character.Animate.Disabled = false
+end
+print("finished.")
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "MM2", Text = "Created by 30xMkzZ"})
+	end)
+end
+coroutine.wrap(button3)()
+
+local function exit()
+	local script = Instance.new('LocalScript', Exit)
+	script.Parent.MouseButton1Click:Connect(function()
+		ScreenGui:Destroy()
+	end)
+end
+coroutine.wrap(exit)()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button4
+Tab:AddButton({
+	Name = "MM2 ESP",
+	Callback = function()
+local function getRoleColor(plr)
+   if (plr.Backpack:FindFirstChild("Knife") or plr.Character:FindFirstChild("Knife")) then
+       return Color3.new(255, 0, 0)
+   elseif (plr.Backpack:FindFirstChild("Gun") or plr.Character:FindFirstChild("Gun")) then
+       return Color3.new(0, 0, 255)
+   else
+       return Color3.new(0, 255, 0)
+   end
+end
+
+while true do
+   for _, v in pairs(game.Players:GetChildren()) do
+       if v ~= game.Players.LocalPlayer and v.Character and not v.Character:FindFirstChild("Highlight") then
+           Instance.new("Highlight", v.Character)
+           v.Character.Highlight.FillTransparency = 0.5
+           v.Character.Highlight.OutlineTransparency = 0.5
+           v.Character.Highlight.FillColor = getRoleColor(v)
+       elseif (v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Highlight")) then
+           v.Character.Highlight.FillColor = getRoleColor(v)
+       end
+   end
+   wait(0.1)
+end
+      		print("Button Pressed")
+  	end    
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "Brookhaven"
+})
+
+---Button
+Tab:AddButton({
+	Name = "Ice Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "Blox Fruit"
+})
+
+---Button2
+Tab:AddButton({
+	Name = "Hoho Hub",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "Pls Donate"
+})
+
+---Button
+Tab:AddButton({
+	Name = "Dreadz Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/DreadzHub2/DreadzHub-Scripts-FR/main/Loader"))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Button
+Tab:AddButton({
+	Name = "Pls Donate 2",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/bardium/random/main/plsdonate'))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "Adopt Me"
+})
+
+---Button
+Tab:AddButton({
+	Name = "Ice Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+      		print("Button Pressed")
+  	end    
+})
+
+---Tab
+local Tab = Window:MakeTab({
+	Name = "Credit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "Roblox : 30xMkzZ"
+})
+
+---Section
+local Section = Tab:AddSection({
+	Name = "Discord : 30xMkzZ#0001"
+})
