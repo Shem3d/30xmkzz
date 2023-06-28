@@ -114,3 +114,138 @@ Tab:AddButton({
       		print("Button Pressed")
   	end    
 })
+
+Tab:AddButton({
+	Name = "Eclipse Hub",
+	Callback = function()
+	getgenv().mainKey = "nil"
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+      		print("Button Pressed")
+  	end    
+})local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/l0wx1k/okk/main/Ajh')))()
+
+local Window = OrionLib:MakeWindow({Name = "30xMkzZ Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MkzZ Script"})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Commands"
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+      		print("Button Pressed")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Hub"
+})
+
+Tab:AddButton({
+	Name = "Ice Hub",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+      		print("Button Pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Hoho Hub",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+      		print("Button Pressed")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "FE"
+})
+
+Tab:AddButton({
+	Name = "Headless",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Fly-GUI/main/Fly'))()
+      		print("Button Pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Fly",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/fly/main/Fly'))()
+      		print("Button Pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Invisible",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Fly-GUI/main/Fly'))()
+      		print("Button Pressed")
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "Utility"
+})
+
+Tab:AddButton({
+	Name = "Fps Boost",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/fps-boost/main/Fps%20booster'))()
+      		print("Button Pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Shiftlock",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Shiftlock-/main/Shiftlock'))()
+      		print("Button Pressed")
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Games",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Murder Mystery 2"
+})
+
+Tab:AddButton({
+	Name = "Lunar Hub Premium",
+	Callback = function()
+	script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ";
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
+      		print("Button Pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Symphony Hub",
+	Callback = function()
+	local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
+      		print("Button Pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Eclipse Hub",
+	Callback = function()
+	getgenv().mainKey = "nil"
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+      		print("Button Pressed")
+  	end    
+})
