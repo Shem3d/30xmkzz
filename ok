@@ -1,29 +1,17 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/l0wx1k/okk/main/Ajh')))()
 
----Windows
-local Window = OrionLib:MakeWindow({Name = "30xMkzZ Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "30xMkzZ Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MkzZ Script"})
 
----Notify
-OrionLib:MakeNotification({
-	Name = "30xMkzZ Hub",
-	Content = "30xMkzZ Hub Launched",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
----Tab
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
----Section
 local Section = Tab:AddSection({
-	Name = "Commands Category"
+	Name = "Commands"
 })
 
----Button
 Tab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
@@ -32,12 +20,10 @@ Tab:AddButton({
   	end    
 })
 
----Section
 local Section = Tab:AddSection({
-	Name = "Hub Category"
+	Name = "Hub"
 })
 
----Button
 Tab:AddButton({
 	Name = "Ice Hub",
 	Callback = function()
@@ -46,7 +32,6 @@ Tab:AddButton({
   	end    
 })
 
----Button2
 Tab:AddButton({
 	Name = "Hoho Hub",
 	Callback = function()
@@ -55,71 +40,38 @@ Tab:AddButton({
   	end    
 })
 
----Button3
-Tab:AddButton({
-	Name = "Eclipse Hub",
-	Callback = function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script'),true))()
-      		print("Button Pressed")
-  	end    
-})      
-
----Section
 local Section = Tab:AddSection({
-	Name = "FE Category"
+	Name = "FE"
 })
 
----Button
 Tab:AddButton({
-	Name = "Headless (FE)",
+	Name = "Headless",
 	Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Fly-GUI/main/Fly'))()
       		print("Button Pressed")
   	end    
 })
 
----Button2
 Tab:AddButton({
-	Name = "Shiftlock (FE)",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Shiftlock-/main/Shiftlock'))()
-      		print("Button Pressed")
-  	end    
-})
-
----Button3
-Tab:AddButton({
-	Name = "Fly (FE)",
+	Name = "Fly",
 	Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/fly/main/Fly'))()
       		print("Button Pressed")
   	end    
 })
 
----Button4
 Tab:AddButton({
-	Name = "Invisible (FE)",
+	Name = "Invisible",
 	Callback = function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Fly-GUI/main/Fly'))()
       		print("Button Pressed")
   	end    
 })
 
----Section
 local Section = Tab:AddSection({
-	Name = "Utility Category"
+	Name = "Utility"
 })
 
----Button
-Tab:AddButton({
-	Name = "Keyboard",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-      		print("Button Pressed")
-  	end    
-})
-
----Button2
 Tab:AddButton({
 	Name = "Fps Boost",
 	Callback = function()
@@ -128,33 +80,37 @@ Tab:AddButton({
   	end    
 })
 
----Tab
+Tab:AddButton({
+	Name = "Shiftlock",
+	Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Shiftlock-/main/Shiftlock'))()
+      		print("Button Pressed")
+  	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "Games",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
----Section
 local Section = Tab:AddSection({
 	Name = "Murder Mystery 2"
-})    
-
----Button1
-Tab:AddButton({
-	Name = "Symphony Hub",
-	Callback = function()
-	local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
-      		print("Button Pressed")
-  	end    
 })
 
----Button2
 Tab:AddButton({
 	Name = "Lunar Hub Premium",
 	Callback = function()
 	script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
+      		print("Button Pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Symphony Hub",
+	Callback = function()
+	local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
       		print("Button Pressed")
   	end    
 })
