@@ -1,251 +1,131 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/l0wx1k/okk/main/Ajh')))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = OrionLib:MakeWindow({Name = "30xMkzZ Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MkzZ Script"})
+local Window = Library.CreateLib("MkzZ Hub", "DarkTheme")
 
-local Tab = Window:MakeTab({
-	Name = "Main",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+local Tab = Window:NewTab("Scripts")
 
-local Section = Tab:AddSection({
-	Name = "Commands"
-})
+local Section = Tab:NewSection("Main")
 
-Tab:AddButton({
-	Name = "Infinite Yield",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-      		print("Button Pressed")
-  	end    
-})
+Section:NewButton("Lunar Hub Elite", "ButtonInfo", function()
 
-local Section = Tab:AddSection({
-	Name = "Hub"
-})
-
-Tab:AddButton({
-	Name = "Ice Hub",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
-      		print("Button Pressed")
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Hoho Hub",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
-      		print("Button Pressed")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "FE"
-})
-
-Tab:AddButton({
-	Name = "Headless",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Fly-GUI/main/Fly'))()
-      		print("Button Pressed")
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Fly",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/fly/main/Fly'))()
-      		print("Button Pressed")
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Invisible",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Fly-GUI/main/Fly'))()
-      		print("Button Pressed")
-  	end    
-})
-
-local Section = Tab:AddSection({
-	Name = "Utility"
-})
-
-Tab:AddButton({
-	Name = "Fps Boost",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/fps-boost/main/Fps%20booster'))()
-      		print("Button Pressed")
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Shiftlock",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Shiftlock-/main/Shiftlock'))()
-      		print("Button Pressed")
-  	end    
-})
-
-local Tab = Window:MakeTab({
-	Name = "Games",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "Murder Mystery 2"
-})
-
-Tab:AddButton({
-	Name = "Lunar Hub Premium",
-	Callback = function()
-	script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ";
+script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
-      		print("Button Pressed")
-  	end    
-})
 
-Tab:AddButton({
-	Name = "Symphony Hub",
-	Callback = function()
-	local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
-      		print("Button Pressed")
-  	end    
-})
+    print("Clicked")
+end)
 
-Tab:AddButton({
-	Name = "Eclipse Hub",
-	Callback = function()
-	getgenv().mainKey = "nil"
+Section:NewButton("Shiftlock", "ButtonInfo", 
 
-local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-      		print("Button Pressed")
-  	end    
-})local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/l0wx1k/okk/main/Ajh')))()
+-- Hella mode ReMAKE
 
-local Window = OrionLib:MakeWindow({Name = "30xMkzZ Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "MkzZ Script"})
+local ShiftLockScreenGui = Instance.new("ScreenGui")
+local ShiftLockButton = Instance.new("ImageButton")
+local ShiftlockCursor = Instance.new("ImageLabel")
+local CoreGui = game:GetService("CoreGui")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local ContextActionService = game:GetService("ContextActionService")
+local Player = Players.LocalPlayer
+local UserInputService = game:GetService("UserInputService")
+local States = {
+    Off = "rbxasset://textures/ui/mouseLock_off@2x.png",
+    On = "rbxasset://textures/ui/mouseLock_on@2x.png",
+    Lock = "rbxasset://textures/MouseLockedCursor.png",
+    Lock2 = "rbxasset://SystemCursors/Cross"
+}
+local MaxLength = 900000
+local EnabledOffset = CFrame.new(1.7, 0, 0)
+local DisabledOffset = CFrame.new(-1.7, 0, 0)
+local Active
 
-local Tab = Window:MakeTab({
-	Name = "Main",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+ShiftLockScreenGui.Name = "Shiftlock (CoreGui)"
+ShiftLockScreenGui.Parent = CoreGui
+ShiftLockScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ShiftLockScreenGui.ResetOnSpawn = false
 
-local Section = Tab:AddSection({
-	Name = "Commands"
-})
+ShiftLockButton.Parent = ShiftLockScreenGui
+ShiftLockButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShiftLockButton.BackgroundTransparency = 1.000
+ShiftLockButton.Position = UDim2.new(0.8, 0, 0.35, 0)
+ShiftLockButton.Size = UDim2.new(0.0636147112, 0, 0.0661305636, 0)
+ShiftLockButton.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ShiftLockButton.Image = States.Off
 
-Tab:AddButton({
-	Name = "Infinite Yield",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-      		print("Button Pressed")
-  	end    
-})
+ShiftlockCursor.Name = "Shiftlock Cursor"
+ShiftlockCursor.Parent = ShiftLockScreenGui
+ShiftlockCursor.Image = States.Lock
+ShiftlockCursor.Size = UDim2.new(0.03, 0, 0.03, 0)
+ShiftlockCursor.Position = UDim2.new(0.5, 0, 0.5, 0)
+ShiftlockCursor.AnchorPoint = Vector2.new(0.5, 0.5)
+ShiftlockCursor.SizeConstraint = Enum.SizeConstraint.RelativeXX
+ShiftlockCursor.BackgroundTransparency = 1
+ShiftlockCursor.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+ShiftlockCursor.Visible = false
 
-local Section = Tab:AddSection({
-	Name = "Hub"
-})
+ShiftLockButton.MouseButton1Click:Connect(
+    function()
+        if not Active then
+            Active =
+                RunService.RenderStepped:Connect(
+                function()
+                    Player.Character.Humanoid.AutoRotate = false
+                    ShiftLockButton.Image = States.On
+                    ShiftlockCursor.Visible = true
+                    Player.Character.HumanoidRootPart.CFrame =
+                        CFrame.new(
+                        Player.Character.HumanoidRootPart.Position,
+                        Vector3.new(
+                            workspace.CurrentCamera.CFrame.LookVector.X * MaxLength,
+                            Player.Character.HumanoidRootPart.Position.Y,
+                            workspace.CurrentCamera.CFrame.LookVector.Z * MaxLength
+                        )
+                    )
+                    workspace.CurrentCamera.CFrame = workspace.CurrentCamera.CFrame * EnabledOffset
+                    workspace.CurrentCamera.Focus =
+                        CFrame.fromMatrix(
+                        workspace.CurrentCamera.Focus.Position,
+                        workspace.CurrentCamera.CFrame.RightVector,
+                        workspace.CurrentCamera.CFrame.UpVector
+                    ) * EnabledOffset
+                end
+            )
+        else
+            Player.Character.Humanoid.AutoRotate = true
+            ShiftLockButton.Image = States.Off
+            workspace.CurrentCamera.CFrame = workspace.CurrentCamera.CFrame * DisabledOffset
+            ShiftlockCursor.Visible = false
+            pcall(
+                function()
+                    Active:Disconnect()
+                    Active = nil
+                end
+            )
+        end
+    end
+)
 
-Tab:AddButton({
-	Name = "Ice Hub",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
-      		print("Button Pressed")
-  	end    
-})
+local ShiftLockAction = ContextActionService:BindAction("Shift Lock", ShiftLock, false, "On")
+ContextActionService:SetPosition("Shift Lock", UDim2.new(0.8, 0, 0.8, 0))
 
-Tab:AddButton({
-	Name = "Hoho Hub",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
-      		print("Button Pressed")
-  	end    
-})
+return {} and ShiftLockAction
 
-local Section = Tab:AddSection({
-	Name = "FE"
-})
+function()
 
-Tab:AddButton({
-	Name = "Headless",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Fly-GUI/main/Fly'))()
-      		print("Button Pressed")
-  	end    
-})
+    print("Clicked")
+end)
 
-Tab:AddButton({
-	Name = "Fly",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/fly/main/Fly'))()
-      		print("Button Pressed")
-  	end    
-})
+Section:NewButton("Fly GUI, "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/fly/main/Fly'))()
+    print("Clicked")
+end)
 
-Tab:AddButton({
-	Name = "Invisible",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Fly-GUI/main/Fly'))()
-      		print("Button Pressed")
-  	end    
-})
+Section:NewButton("Infinite Yield, "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("Clicked")
+end)
 
-local Section = Tab:AddSection({
-	Name = "Utility"
-})
+Section:NewButton("Symphony Hub, "ButtonInfo", function()
 
-Tab:AddButton({
-	Name = "Fps Boost",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/fps-boost/main/Fps%20booster'))()
-      		print("Button Pressed")
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Shiftlock",
-	Callback = function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/l0wx1k/Shiftlock-/main/Shiftlock'))()
-      		print("Button Pressed")
-  	end    
-})
-
-local Tab = Window:MakeTab({
-	Name = "Games",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "Murder Mystery 2"
-})
-
-Tab:AddButton({
-	Name = "Lunar Hub Premium",
-	Callback = function()
-	script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
-      		print("Button Pressed")
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Symphony Hub",
-	Callback = function()
-	local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
-      		print("Button Pressed")
-  	end    
-})
-
-Tab:AddButton({
-	Name = "Eclipse Hub",
-	Callback = function()
-	getgenv().mainKey = "nil"
-
-local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-      		print("Button Pressed")
-  	end    
-})
+local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
+    print("Clicked")
+end)
